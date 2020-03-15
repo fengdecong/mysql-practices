@@ -49,13 +49,19 @@ ERROR 1048 (23000): Column 'name' cannot be null
 	create table teacher(
 	tid int ,
 	name varchar(20)
-	primary key(tid) //有错误
+	);
+	
+	//创建学生老师关系表
+	creat table teach(
+	tid int,
+	cid int,
+	primary key(tid,cid)
 	);
 	
 	//创建学生表
 	create table student(
 	sid int ,
-	name varchar(20)
+	name verchar(20)
 	);
 	
 
